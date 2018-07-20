@@ -1,0 +1,43 @@
+.video{
+  background: url("../img/video-bg.png") no-repeat center center;
+  background-size: cover;
+  height: 500px;
+  transition: all .2s ease;
+}
+.video__content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.video__title{
+  margin: 0 0 31px;
+  font-size: 30px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+}
+.video__play{
+
+}
+.video__button{
+  display: block;
+  width: 80px;
+  margin: 0 auto 40px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+.video__hint{
+  font-size: 15px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 768px){
+  .video{
+    height: 300px;
+  }
+}
