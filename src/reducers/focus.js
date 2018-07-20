@@ -1,5 +1,3 @@
-import * as C from '../constants/ActionType';
-
 const INITIAL_STATE = [
     {
         title: 'Web Design',
@@ -19,19 +17,6 @@ const INITIAL_STATE = [
     }
 ];
 
-
-export default function setFocus(state = INITIAL_STATE, action) {
-    switch (action.type){
-        case C.SET_FOCUS: {
-            return [
-                ...state,
-                {
-                    title: action.title,
-                    content: action.content,
-                    id: action.id
-                }
-            ]
-        }
-        default: return state;
-    }
+export default function setFocus (state = INITIAL_STATE) {
+    return state;
 }

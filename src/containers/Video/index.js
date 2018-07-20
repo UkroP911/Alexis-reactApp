@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { connect } from 'react-redux';
 import Modal from '../../components/Modal'
 
 class VideoContainer extends Component{
@@ -25,6 +25,7 @@ class VideoContainer extends Component{
 
 
     render(){
+        const {modal} = this.props;
         return(
             <div className="video" id="video">
                 <div className="wrapper">
@@ -43,6 +44,7 @@ class VideoContainer extends Component{
                 { this.state.show &&
                 <Modal
                     onClick={this.closeModal}
+                    url={modal.url}
                 />
                 }
             </div>
@@ -50,4 +52,8 @@ class VideoContainer extends Component{
     }
 }
 
-export default VideoContainer;
+export default connect(
+    (state) => ({
+        modal: state.modal
+    })
+)(VideoContainer)

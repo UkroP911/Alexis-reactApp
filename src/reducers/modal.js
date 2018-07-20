@@ -1,24 +1,7 @@
-import * as C from '../constants/ActionType';
+const INITIAL_STATE = {
+    url: 'https://www.youtube.com/embed/aGSKrC7dGcY'
+};
 
-const initialState = {
-    modals: [],
+export default function setModalUrl (state = INITIAL_STATE) {
+    return state
 }
-
- const modal = (state = initialState, action) => {
-    switch (action.type){
-        case C.OPEN_MODAL:
-            return {
-                ...state,
-                modal: state.modals.concat(action.obj)
-            }
-        case C.CLOSE_MODAL:
-            return {
-                ...state,
-                modals: state.modals.filter(item => item.id !== action.obj.id)
-            }
-        default:
-            return state
-    }
-}
-
-export default modal;

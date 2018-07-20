@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default ({onClick}) =>{
+export default ({onClick, url}) =>{
     return(
         <div className="popup js-overlay"
              onClick={onClick}
@@ -10,7 +10,7 @@ export default ({onClick}) =>{
                     <button className="popup__close-btn js-close-video"
                             onClick={onClick}
                     ><span></span><span></span></button>
-                    <iframe title="modal" src="https://www.youtube.com/embed/aGSKrC7dGcY" allowFullScreen></iframe>
+                    <iframe title="modal" src={url+'?autoplay=1'} allowFullScreen></iframe>
                 </div>
             </div>
         </div>
