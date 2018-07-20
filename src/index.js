@@ -1,21 +1,15 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+
 import { Provider } from 'react-redux';
-import {createStore} from 'redux';
-import configureStore from './store/store'
+import configureStore from './store/configureStore'
 
 import App from './App';
 
-const store = createStore(configureStore);
-
-// console.log(store.getState());
-
+const store = configureStore();
 
 render((
-    <BrowserRouter>
-        <Provider store={store}>
-            <App />
-        </Provider>
-    </BrowserRouter>
+    <Provider store={store}>
+        <App />
+    </Provider>
 ), document.getElementById('root'));

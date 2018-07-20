@@ -1,4 +1,4 @@
-import C from '../constants/ActionType';
+import * as C from '../constants/ActionType';
 
 const initialState = {
     modals: [],
