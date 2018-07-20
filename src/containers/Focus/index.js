@@ -8,7 +8,7 @@ class Focus extends Component{
 
 
     render(){
-        const {focus} = this.props;
+        const {...focus} = this.props;
         return (
             <div className="focus" id="focus">
                 <div className="wrapper">
@@ -21,7 +21,7 @@ class Focus extends Component{
                         </div>
                         <div className="focus__services">
                             {
-                                focus.map((title, index) =>
+                                focus.focus.map((title, index) =>
                                     <TileItem key={index} title={title.title} />
                                 )
                             }

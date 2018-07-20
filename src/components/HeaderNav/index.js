@@ -15,7 +15,7 @@ export default () =>
                 <NavLink smooth to="/main#video" className="nav__list-link">Portfolio</NavLink>
             </li>
             <li className="nav__list-item">
-                <a href="" className="nav__list-link">Our Team</a>
+                <NavLink smooth to="/main#team" className="nav__list-link">Our Team</NavLink>
             </li>
             <li className="nav__list-item">
                 <a href="" className="nav__list-link">Work Steps</a>
