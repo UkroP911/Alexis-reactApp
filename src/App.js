@@ -9,6 +9,7 @@ import About from './components/About/';
 // import Video from './components/Video/';
 import Video from './containers/Video';
 import Focus from './containers/Focus';
+import Team from './containers/Team';
 
 
 
@@ -22,6 +23,7 @@ class App extends Component {
                 <About />
                 <Focus />
                 <Video />
+                <Team />
             </div>
         </BrowserRouter>
     );

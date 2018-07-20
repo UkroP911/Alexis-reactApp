@@ -25,7 +25,7 @@ class VideoContainer extends Component{
 
 
     render(){
-        const {modal} = this.props;
+        const {...modal} = this.props;
         return(
             <div className="video" id="video">
                 <div className="wrapper">
@@ -44,7 +44,7 @@ class VideoContainer extends Component{
                 { this.state.show &&
                 <Modal
                     onClick={this.closeModal}
-                    url={modal.url}
+                    url={modal.modal.url}
                 />
                 }
             </div>
