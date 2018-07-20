@@ -40,11 +40,10 @@ class VideoContainer extends Component{
                     </div>
                 </div>
 
-                { this.state.show && <Modal
+                { this.state.show &&
+                <Modal
                     onClick={this.closeModal}
                 />
-
-
                 }
             </div>
         )
