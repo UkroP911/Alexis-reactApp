@@ -4,27 +4,11 @@ import { connect } from 'react-redux';
 
 import TileItem from '../../components/Focus';
 
-function mapStateToProps(state) {
-
-    return {
-        focus: state.map((item, id) => {
-            // console.log(item.content);
-            return ({
-                title: item.title,
-                content: item.content,
-                id: id
-            })
-        })
-    }
-};
-
-
 class Focus extends Component{
 
 
     render(){
         const {focus} = this.props;
-        // console.log('posdsop',focus);
         return (
             <div className="focus" id="focus">
                 <div className="wrapper">
@@ -50,5 +34,8 @@ class Focus extends Component{
 
 }
 
-// export default Focus;
-export default connect(mapStateToProps)(Focus)
+export default connect(
+    (state) => ({
+        focus: state.focus
+    })
+)(Focus)
