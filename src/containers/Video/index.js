@@ -13,7 +13,6 @@ class VideoContainer extends Component{
     }
 
     openModal = () =>{
-        console.log('pooop');
         this.setState({
             show: true
         })
@@ -24,21 +23,6 @@ class VideoContainer extends Component{
         })
     }
 
-    // handleModal = () => {
-    //     if(this.state.show === true){
-    //         console.log('poop');
-    //         return(
-    //             <div className="popup js-overlay">
-    //                 <div className="popup__video-container">
-    //                     <div className="popup__video-wrap">
-    //                         <button className="popup__close-btn js-close-video"><span></span><span></span></button>
-    //                         <iframe title="modal" src="https://www.youtube.com/embed/aGSKrC7dGcY" allowFullScreen></iframe>
-    //                     </div>
-    //                 </div>
-    //             </div>
-    //         )
-    //     }
-    // };
 
     render(){
         return(
@@ -68,19 +52,3 @@ class VideoContainer extends Component{
 }
 
 export default VideoContainer;
-
-
-
-
-// <div className="popup js-overlay"
-//      onClick={this.closeModal}
-// >
-//     <div className="popup__video-container">
-//         <div className="popup__video-wrap">
-//             <button className="popup__close-btn js-close-video"
-//                     onClick={this.closeModal}
-//             ><span></span><span></span></button>
-//             <iframe title="modal" src="https://www.youtube.com/embed/aGSKrC7dGcY" allowFullScreen></iframe>
-//         </div>
-//     </div>
-// </div>
