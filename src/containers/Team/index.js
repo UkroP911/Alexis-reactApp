@@ -14,7 +14,7 @@ class Team extends Component{
     }
 
     componentWillMount(){
-        this.setState({loading: true})
+        this.setState({loading: true});
         fetch('https://randomuser.me/api/?results=4')
             .then(response => response.json())
             .then(obj => obj.results)
