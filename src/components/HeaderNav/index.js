@@ -17,20 +17,5 @@ export default () =>
             <li className="nav__list-item">
                 <NavLink smooth to="/main#team" className="nav__list-link">Our Team</NavLink>
             </li>
-            <li className="nav__list-item">
-                <a href="" className="nav__list-link">Work Steps</a>
-            </li>
-            <li className="nav__list-item">
-                <a href="" className="nav__list-link">Pricing</a>
-            </li>
-            <li className="nav__list-item">
-                <a href="" className="nav__list-link">Testimonials</a>
-            </li>
-            <li className="nav__list-item">
-                <a href="" className="nav__list-link">Blog</a>
-            </li>
-            <li className="nav__list-item">
-                <a href="" className="nav__list-link">Contact</a>
-            </li>
         </ul>
     </nav>;
