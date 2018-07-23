@@ -71,6 +71,19 @@
     }
   }
 }
+.header__nav.open-nav{
+  display: block;
+  animation: nav .2s;
+}
+@keyframes nav {
+  0%{
+    transform: translateY(-100%);
+  }
+  100%{
+    transform: translateY(0);
+  }
+
+}
 
 @media screen and (max-width: 992px){
   .header__nav{
