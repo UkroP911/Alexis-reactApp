@@ -2,6 +2,7 @@ import React from 'react'
 
 export default () =>
     <div id="hero" className="hero">
+        <div className="hero-bg"> </div>
         <div className="wrapper">
             <div className="hero__content">
                 <div className="hero__title">

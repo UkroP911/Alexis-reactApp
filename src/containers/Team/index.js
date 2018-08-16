@@ -43,6 +43,7 @@ class Team extends Component{
                                     return <TeamMember key={index} person={person.name}
                                                        first={first.charAt(0).toUpperCase() + first.slice(1)}
                                                        last={last.charAt(0).toUpperCase() + last.slice(1)}
+                                                       avatar={person.picture.large}
 
                                     />
                                 })
